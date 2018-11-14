@@ -1,37 +1,69 @@
-## Welcome to GitHub Pages
+# Welcome to Rora Js
 
-You can use the [editor on GitHub](https://github.com/ShapeGroup/rora-js/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Rora (wheel / gear) is a small but powerful javascript library that allows you to manage all the common actions you would do on a user interface.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The main task of the framewrok is to manage, more quickly, the problems inherent in the actions and requests the front-end. From loops to actions.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Exemple
 
-```markdown
-Syntax highlighted code block
+retrieve elements from the dom and cycle them in a simple way:
 
-# Header 1
-## Header 2
-### Header 3
+```
+doc.find(".test").loop((node,collection) => {
+  my loop...
+});
 
-- Bulleted
-- List
+```
+a simple click action:
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+```
+doc.find(".test").on("click", (node,collection)=>{
 
-[Link](url) and ![Image](src)
+    collection.loop((node)=>{
+        node.html.innerHTML = "looped";
+    });
+
+    node.html.innerHTML = "looped - CLICK!";
+
+});
+
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+or, for example, a more complex action on a swipe and the modification of the Dom:
 
-### Jekyll Themes
+```
+var mytarget = doc.find("body");
+doc.on(mytarget, "swipe", () => {
+    doc.find(".testTouch").mods("write", ("you swiper on "+swipedirection));
+});
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ShapeGroup/rora-js/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Difference to differences between rora js and other famous frameworks
+Most non-mvc frameworks are based on the collection of an element and determine it as "this" with the natural consequence of continuous page refresh and the probability of losing the subject being processed. In Rora, on the other hand, objects and arrays of elements are processed according to need (or taste).
+
+For example, it is possible to work the array list of the colletion object with the framwork modifiers:
+
+```
+doc.find(".button").on( "click", (collection) => {
+    collection.mods("write", "wow! you click!"));
+});
+```
+
+or extrapolate the child html node by entering the object itself to work it with pure javascript.
+
+```
+doc.find(".button").on( "click", (collection) => {
+    collection.html.innerHTML = "wow! you click!";
+});
+```
+
+
+### Other info:
+Rora, is the alternate for every basic action on the frontend-dev and design.
+we are going to implement the wiki and all the features.
+
+Stay tuned.
