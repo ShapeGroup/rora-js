@@ -10,8 +10,9 @@ The main task of the framewrok is to manage, more quickly, the problems inherent
 
 
 
-GitPage: [LINK](https://shapegroup.github.io/rora-js/)
-DOWNLOAD RORA.JS : [LINK](https://github.com/ShapeGroup/rora-js/blob/master/rora.min.js)
+::: GitPage: [PAGE](https://shapegroup.github.io/rora-js/) || [PROJECT](https://github.com/ShapeGroup/rora-js)
+
+::: DOWNLOAD RORA.JS : [LINK](https://github.com/ShapeGroup/rora-js/blob/master/rora.min.js)
 
 
 
