@@ -9,7 +9,7 @@ Rora (wheel / gear) is a small but powerful javascript library that allows you t
 The main task of the framewrok is to manage, more quickly, the problems inherent in the actions and requests the front-end. From loops to actions.
 
 
-[ [PROJECT](https://github.com/ShapeGroup/rora-js) | [PAGE](https://shapegroup.github.io/rora-js/) | [WiKiZONE](https://github.com/ShapeGroup/rora-js/wiki) | [DOWNLOAD RORA.MIN.JS](https://github.com/ShapeGroup/rora-js/blob/master/rora.min.js) ]
+[ [PROJECT](https://github.com/ShapeGroup/rora-js) | [PAGE](https://shapegroup.github.io/rora-js/) | [WiKiZONE](https://github.com/ShapeGroup/rora-js/wiki/WIKIZONE) | [DOWNLOAD RORA.MIN.JS](https://github.com/ShapeGroup/rora-js/blob/master/rora.min.js) ]
 
 
 
