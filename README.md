@@ -21,11 +21,13 @@ a simple click action:
 ```
 doc.find(".test").on("click", (node,collection)=>{
 
+    var clickedEl = node.html.innerHTML;
+
     collection.loop((node)=>{
         node.html.innerHTML = "looped";
     });
 
-    node.html.innerHTML = "looped - CLICK!";
+    clickedEl.innerHTML = "looped - CLICK!";
 
 });
 
