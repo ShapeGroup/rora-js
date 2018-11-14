@@ -6,7 +6,8 @@ The main task of the framewrok is to manage, more quickly, the problems inherent
 
 DOWNLOAD RORA.JS : [LINK](https://github.com/ShapeGroup/rora-js/blob/master/rora.min.js)
 
-###
+
+
 ### Exemple
 
 retrieve elements from the dom and cycle them in a simple way:
@@ -44,7 +45,8 @@ doc.on(mytarget, "swipe", () => {
 });
 ```
 
-###
+
+
 ### Difference to differences between rora js and other famous frameworks
 Most non-mvc frameworks are based on the collection of an element and determine it as "this" with the natural consequence of continuous page refresh and the probability of losing the subject being processed. In Rora, on the other hand, objects and arrays of elements are processed according to need (or taste).
 
@@ -64,7 +66,9 @@ doc.find(".button").on( "click", (collection) => {
 });
 ```
 
-###
+
+
+
 ### Other info:
 Rora, is the alternate for every basic action on the frontend-dev and design.
 We're going to implement the wiki and all the features.
