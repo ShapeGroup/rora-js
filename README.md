@@ -1,4 +1,8 @@
+![](https://i.imgur.com/o8BGMf3.jpg)
+
+
 # Welcome to Rora Js
+
 
 Rora (wheel / gear) is a small but powerful javascript library that allows you to manage all the common actions you would do on a user interface.
 
